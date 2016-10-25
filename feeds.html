@@ -9,7 +9,13 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Font awesome -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Feed CSS -->
+  <link rel="stylesheet" media="screen" href="vendor/css/jquery.socialfeed.css">
+  <!-- Theme -->
 	<link rel="stylesheet" media="screen" href="responsive.css">
+  <!-- Print -->
 	<link rel="stylesheet" media="print" href="print.css">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 
@@ -25,7 +31,6 @@
 </head>
 <body id="css-zen-garden">
 <div class="page-wrapper">
-
 	<section class="intro" id="zen-intro">
 		<header role="banner">
 			<nav class="navbar navbar-default">
@@ -38,15 +43,15 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand" href="index.html">CSS Zen Garden</a>
+			      <a class="navbar-brand" href="#">CSS Zen Garden</a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
-			        <li><a href="index.html">Hjem</a></li>
+			        <li class="active"><a href="index.html">Hjem<span class="sr-only">(current)</span></a></li>
 			        <li><a href="news.html">Nyheter</a></li>
-			        <li class="active"><a href="page3.html">Om Oss<span class="sr-only">(current)</span></a></li>
+			        <li><a href="page3.html">Om Oss</a></li>
 							<li><a href="facebook.html">Facebook</a></li>
 							<li><a href="twitter.html">Twitter</a></li>
 			      </ul>
@@ -112,75 +117,7 @@
 
 
 		<aside class="sidebar col-md-3" role="complementary">
-			<div class="wrapper">
-
-				<div class="design-selection" id="design-selection">
-					<h3 class="select">Select a Design:</h3>
-					<nav role="navigation">
-						<ul>
-						<li>
-							<a href="/221/" class="design-name">Mid Century Modern</a> by						<a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
-						</li>					<li>
-							<a href="/220/" class="design-name">Garments</a> by						<a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
-						</li>					<li>
-							<a href="/219/" class="design-name">Steel</a> by						<a href="http://steffen-knoeller.de" class="designer-name">Steffen Knoeller</a>
-						</li>					<li>
-							<a href="/218/" class="design-name">Apothecary</a> by						<a href="http://trentwalton.com" class="designer-name">Trent Walton</a>
-						</li>					<li>
-							<a href="/217/" class="design-name">Screen Filler</a> by						<a href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
-						</li>					<li>
-							<a href="/216/" class="design-name">Fountain Kiss</a> by						<a href="http://jeremycarlson.com" class="designer-name">Jeremy Carlson</a>
-						</li>					<li>
-							<a href="/215/" class="design-name">A Robot Named Jimmy</a> by						<a href="http://meltmedia.com/" class="designer-name">meltmedia</a>
-						</li>					<li>
-							<a href="/214/" class="design-name">Verde Moderna</a> by						<a href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
-						</li>					</ul>
-					</nav>
-				</div>
-
-				<div class="design-archives" id="design-archives">
-					<h3 class="archives">Archives:</h3>
-					<nav role="navigation">
-						<ul>
-							<li class="next">
-								<a href="/214/page1">
-									Next Designs <span class="indicator">&rsaquo;</span>
-								</a>
-							</li>
-							<li class="viewall">
-								<a href="http://www.mezzoblue.com/zengarden/alldesigns/" title="View every submission to the Zen Garden.">
-									View All Designs							</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-
-				<div class="zen-resources" id="zen-resources">
-					<h3 class="resources">Resources:</h3>
-					<ul>
-						<li class="view-css">
-							<a href="style.css" title="View the source CSS file of the currently-viewed design.">
-								View This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr>						</a>
-						</li>
-						<li class="css-resources">
-							<a href="http://www.mezzoblue.com/zengarden/resources/" title="Links to great sites with information on using CSS.">
-								<abbr title="Cascading Style Sheets">CSS</abbr> Resources						</a>
-						</li>
-						<li class="zen-faq">
-							<a href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden.">
-								<abbr title="Frequently Asked Questions">FAQ</abbr>						</a>
-						</li>
-						<li class="zen-submit">
-							<a href="http://www.mezzoblue.com/zengarden/submit/" title="Send in your own CSS file.">
-								Submit a Design						</a>
-						</li>
-						<li class="zen-translations">
-							<a href="http://www.mezzoblue.com/zengarden/translations/" title="View translated versions of this page.">
-								Translations						</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+      <div class="social-feed-container"></div>
 		</aside>
 
 
@@ -199,5 +136,54 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Codebird.js - required for TWITTER -->
+<script src="vendor/js/codebird.js"></script>
+<!-- doT.js for rendering templates -->
+<script src="vendor/js/doT.min.js"></script>
+<!-- Moment.js for showing "time ago" and/or "date"-->
+<script src="vendor/js/moment.min.js"></script>
+<!-- Feed plugin -->
+<script src="vendor/js/jquery.socialfeed.js"></script>
+<script>
+$( document ).ready(function() {
+  $('.social-feed-container').socialfeed({
+      // FACEBOOK
+      facebook:{
+          accounts: ['@teslamotors'],  //Array: Specify a list of accounts from which to pull wall posts
+          limit: 5,                                   //Integer: max number of posts to load
+          access_token: '1071890299573216|10103759f4b35134926777f3099a4dda'  //String: "APP_ID|APP_SECRET"
+      },
+      // TWITTER
+      twitter:{
+          accounts: ['@spacex'],                      //Array: Specify a list of accounts from which to pull tweets
+          limit: 5,                                   //Integer: max number of tweets to load
+          consumer_key: 'KD6zYB2JuxJNtRoA3PRH7EHDi',          //String: consumer key. make sure to have your app read-only
+          consumer_secret: 'L4y6ofOMA6blXDRV9ehDc81wQwCd2edF2AKZlA1hvmRDqW6GUQ' //String: consumer secret key. make sure to have your app read-only
+       },
+
+      // GENERAL SETTINGS
+      length:400,                                     //Integer: For posts with text longer than this length, show an ellipsis.
+      show_media:true,                                //Boolean: if false, doesn't display any post images
+      media_min_width: 300,                           //Integer: Only get posts with images larger than this value
+      //update_period: 5000,                            //Integer: Number of seconds before social-feed will attempt to load new posts.
+      template: "vendor/js/template.html",                         //String: Filename used to get the post template.
+      template_html:                                  //String: HTML used for each post. This overrides the 'template' filename option
+      '<article class="twitter-post"> \
+      <h4>{{=it.author_name}}</h4><p>{{=it.text}}  \
+      <a href="{{=it.link}}" target="_blank">read more</a> \
+      </p> \
+      </article>',
+      date_format: "ll",                              //String: Display format of the date attribute (see http://momentjs.com/docs/#/displaying/format/)
+      date_locale: "en",                              //String: The locale of the date (see: http://momentjs.com/docs/#/i18n/changing-locale/)
+      moderation: function(content) {                 //Function: if returns false, template will have class hidden
+          return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
+      },
+      callback: function() {                          //Function: This is a callback function which is evoked when all the posts are collected and displayed
+          console.log("All posts collected!");
+      }
+  });
+});
+</script>
+
 </body>
 </html>
